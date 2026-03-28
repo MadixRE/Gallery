@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shadows | Art of Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --accent: #00d4ff; /* A modern cyber blue instead of matrix green */
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #111 0%, #050505 100%);
+            border-bottom: 1px solid #222;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .art-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .art-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps images from stretching */
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .art-card:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .info { padding: 25px; text-align: left; }
+
+        .info h3 { margin: 0; font-size: 1.5rem; color: var(--accent); }
+
+        .info p { font-size: 0.9rem; color: #aaa; margin-top: 10px; }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        body { background: #050505; color: #fff; font-family: 'Inter', sans-serif; padding: 50px 10%; line-height: 1.8; }
+        .back-btn { color: #00d4ff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .content { max-width: 800px; margin: 50px auto; }
+        h1 { font-size: 3.5rem; color: #00d4ff; margin-bottom: 10px; }
+        .meta { color: #666; font-style: italic; margin-bottom: 40px; }
+        img { width: 100%; border-radius: 15px; border: 1px solid #222; margin-bottom: 40px; }
+        p { font-size: 1.1rem; color: #ccc; }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">← Back to Gallery</a>
+
+    <h1>SOME CYBER LAWS YOU SHOULD KNOW ABOUT</h1>
+    <p>As everyday people we tend to follow some rules and regulation in order to live peaceful lives. But then again how do we know the rules we follow? How do we understand the rules? How sure are we that we arent breaking any right now?  </p>
+    <p>This section may not cover all the laws (wheather related to cyber secutrity or not), but it does cover some things you should know about some of them. </p>
+
+    <ul>
+        <li>
+            <h2>The Data Protection Act,2012 (Act 843)</h2>
+            <p> This law is actually based on the relationship between the user(you) and a company/organization.Basically It talks about how these institutions can not collect your data/information/details without your permission or aproval.
+                These institutions are also obligated to protect your data from being hacked or leaked as well as editing or deleting it when the request is made.
+               </p>
+               <br>
+               <h3>Sanctions</h3>
+               <p>Faliure for the company to comply with these laws leads to:
+                <ol>
+                    <li>A fine up to GHc1,500 penalty unitsc which adds up to Ghc18,000</li>
+                    <li>Serving a 4 year sentence in jail</li>
+                    <li>The Data Protection Commission can also issue an enforcement  notice to stop data processing or order its deletion</li>
+                </ol>
+               </p>
+
+               <li><h2>The Cybersecurity (Act,2020)</h2></li>
+               <p>This aspect of the law protects minors from 'indicent images' shared on the internet.They are also protected from cyberbullying.The act also talks about how owners of "Critical Information Infrastructure" (like banks, telecoms, and utility companies) are now legally mandated to report major cyber incidents to the CSA within 24 hours.
+               In addition, all cybersecurity service providers and professionals must be licensed by the CSA. This ensures that when you hire a security firm, they meet national standards of competence.  </p>
+        <br>
+                <h3>Sanctions</h3>
+                <p>This Act carries some of the heaviest penalties, especially for crimes involving minors or critical infrastructure which are:
+                    <ol>
+                        <li>Crimes like distributing indecent images of children or online grooming carry sentences ranging from 5 to 25 years in prison</li>
+                        <li> Sharing "revenge porn" or threatening to do so carries a prison term of 1 to 3 years. (Recent 2026 amendments have proposed increasing this to 3 to 10 years). </li>
+                        <li> Failure to report a major cyber incident within 24 hours can result in administrative fines between 250 and 10,000 penalty units. </li>
+                        ​<li>Operating without a license (for professionals/firms) can lead to hefty administrative penalties or the revocation of business permits. </li>
+                    </ol>
+                 </p>
+
+                 <li><h2>BoG Cyber & Information Security Directive (2026)</h2></li>
+                 <p>Just launched this month, this directive from the Bank of Ghana is a game-changer for your money. For the first time, mobile money operators and fintech apps are held to the same high security standards as traditional banks.
+​and financial institutions are now required to keep sensitive customer data within Ghana’s borders to ensure better oversight and protection. </p>
+                    <h3>Sanctions</h3>
+                    <p>These include :
+                        <ol>
+                            <li>The suspension of licenses</li>
+                            <li> A ban on launching new digital products</li>
+                            <li>The removal of key executives from their positions if negligence is proven.</li>
+                        </ol>
+                    </p>
+
+                    <li><h2> International "Gold Standards"</h2></li>
+                        <p>​While these are foreign laws, they often protect you if you use global platforms (like Google, Meta, or Amazon):
+    <br>
+                        <span style="color:#00d4ff"> GDPR (Europe):</span> Influenced Ghana’s Act 843. It gives you rights over your data even if the company is based in Europe but serves users here.
+    <br>
+                        <span style="color:#00d4ff"> EU AI Act (2026):</span> As this becomes fully operational, it’s setting global precedents for how "High-Risk" AI systems (like those used in recruitment or credit scoring) must be transparent and unbiased.
+    <br>
+                        </p>
+                        <h3>Sanctions</h3>
+                        <p>For companies operating globally, these penalties are designed to be "effective, proportionate, and dissuasive."
+                            <ol>
+                                <li><span style="color:#00d4ff">GDPR: </span>
+                                    <ul>
+                                         <li><span style="color:#00d4ff">Tier 1 (Lower):</span> Up to €10 million or 2% of global annual turnover (whichever is higher) for procedural errors. </li>
+                                        <li><span style="color:#00d4ff">Tier 2 (Higher):</span> Up to €20 million or 4% of global annual turnover for serious breaches of privacy rights</li>
+                                    </ul>
+                                </li>
+                                <li><span style="color:#00d4ff">EU AI Act (2026):</span>
+                                    <ul>
+                                        <li><span style="color:#00d4ff">Prohibited AI Practices:</span> Up to €35 million or 7% of global turnover.</li>
+                                        <li><span style="color:#00d4ff">Non-compliance for High-Risk Systems:</span> Up to €15 million or 3% of global turnover</li>
+                                        <li>
+                                            <span style="color:#00d4ff">​Deepfakes/Misinformation:</span> New 2026 regulations include criminal penalties (imprisonment) in some jurisdictions for the unlawful dissemination of AI-altered content.</li>
+                                    </ul>
+
+
+                                </li>
+                            </ol>
+                        </p>
+
+                        
+
+
+
+
+            </li>
+    </ul>
+
+    <p> Have in mind that a "Penalty Unit" in Ghana is a standard measure used in legislation so that fines can be adjusted for inflation without rewriting the entire law.</p>
+    <br>
+    <p>These are some of the laws people should be made aware of.If you believe an organization has mishandled your data or you've been a victim of a cybercrime, you can report it directly to the Cyber Security Authority (CSA) via their 24/7 point of contact (often reached via shortcode 292).</p>
+</body>
+</html>

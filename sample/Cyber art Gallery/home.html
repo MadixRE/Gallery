@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shadows | Art of Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --accent: #00d4ff; /* A modern cyber blue instead of matrix green */
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+             .back-btn { color: #00d4ff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        }
+
+        header {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #111 0%, #050505 100%);
+            border-bottom: 1px solid #222;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .art-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .art-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps images from stretching */
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .art-card:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .info { padding: 25px; text-align: left; }
+
+        .info h3 { margin: 0; font-size: 1.5rem; color: var(--accent); }
+
+        .info p { font-size: 0.9rem; color: #aaa; margin-top: 10px; }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGITAL SHADOWS</h1>
+        <p style="color: #666; font-weight: 300;">The Intersection of Art, Ethics, and Surveillance</p>
+    </header>
+
+    <section class="gallery">
+
+    
+    </section>
+    <a href="../Cyber art Gallery/index.html" class="back-btn">← Back to Gallery</a><div class="content"><div class="content"></div>
+    <h1>Recomended Shows</h1>
+    <section class="gallery">
+        <a href="Movies/mr.robot.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/240ff628393099.5a7efd86e4bd6.webp" alt="MR.Robort">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Mr.Robot</h3>
+            
+        </div>
+    </div>
+</a>
+     <a href="Movies/Iboy.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/ab67616d0000b273be194507a61aa2d7be6ccbad.jpeg" alt="Iboy">
+        </div>
+        <div class="info">
+            <span class="tag">Movie</span>
+            <h3>Iboy</h3>
+            
+        </div>
+    </div>
+</a>
+
+     <a href="Movies/Who_am_I.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/MV5BZDFmNDY0NWUtMzZhYS00ZDk4LTg0MWItMTg5MDliZWExNmI4XkEyXkFqcGc@._V1_.jpg" alt="Who am I">
+        </div>
+        <div class="info">
+            <span class="tag">Movie</span>
+            <h3>Who Am I</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Pantheon.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/MV5BNGM2NjRjMzAtZjY5Ni00MWVkLWJlMTQtMWVmOWE1N2M2ZWM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt= "Pantheon">
+        </div>
+        <div class="info">
+            <span class="tag">Animated Series</span>
+            <h3>Pantheon</h3>
+            
+        </div>
+    </div>
+</a>
+     <a href="Movies/Humans.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/humans.jpg" alt="Humans">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Humans</h3>
+            
+        </div>
+    </div>
+</a>
+     <a href="Movies/Silicon_vally.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/silicon-valley-tv-poster.jpg" alt= "Silicon Vally">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Silicon Vally</h3>
+            
+        </div>
+    </div>
+</a>
+<a href="Movies/Black_Mirror.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/163525024_f2db8b.jpg" alt= "Black Mirror">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Black Mirror</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/scavengers_reign.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/Duzem_7XgAAwHlz.jpg" alt= "Scavengers Reign">
+        </div>
+        <div class="info">
+            <span class="tag">Animated Series</span>
+            <h3>Scavengers Reign</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Halt_and_catch-fire.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/Paul-Haslinger-Halt-And-Catch-Fire-COVER-1024x1024.jpg" alt= "Halt_and_catch-fire">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Halt And Catch Fire</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Nerve.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/61KEj8H1umS._AC_UF894,1000_QL80_.jpg" alt= "Nerve">
+        </div>
+        <div class="info">
+            <span class="tag">Movie</span>
+            <h3>Nerve</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/pluto.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/Pluto_Anime_Poster_full.webp" alt= "Pluto">
+        </div>
+        <div class="info">
+            <span class="tag">Animated Series</span>
+            <h3>Pluto</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Devs.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/fff.jpg" alt= "Devs">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Devs</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Person_Of_Interest .html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/Person-Of-Interest-posterspy.jpg" alt= "Person Of Interest">
+        </div>
+        <div class="info">
+            <span class="tag">TV Series</span>
+            <h3>Person Of Interest</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Psycho_pass.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/MV5BNjQ1OTNkZGYtODVlMC00NWI0LWJiYjItMzM4M2U4NjY0ZTYwXkEyXkFqcGc@._V1_.jpg" alt= "Psycho Pass">
+        </div>
+        <div class="info">
+            <span class="tag">Animated Series</span>
+            <h3>Psycho Pass</h3>
+            
+        </div>
+    </div>
+</a>
+
+<a href="Movies/Serial_Experiments_Lain.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/serial-experiments-lain.jpg" alt= "Serial Experiments Lain">
+        </div>
+        <div class="info">
+            <span class="tag">Animated Series</span>
+            <h3>Serial Experiments Lain</h3>
+            
+        </div>
+    </div>
+</a>
+
+
+<a href="Movies/snowden.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/bb3b0675a8571440fd4f3ac7d39580fab2ec6802e991a121485f93710af19ec2.jpg" alt= "Snowden">
+        </div>
+        <div class="info">
+            <span class="tag">Movie</span>
+            <h3>Snowden</h3>
+            
+        </div>
+    </div>
+</a>
+
+
+    </section>
+</body>
+</html>

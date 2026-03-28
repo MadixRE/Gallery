@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shadows | Art of Cyber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --accent: #00d4ff; /* A modern cyber blue instead of matrix green */
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+             .back-btn { color: #00d4ff; text-decoration: none; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        }
+
+        header {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #111 0%, #050505 100%);
+            border-bottom: 1px solid #222;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 60px 10%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .art-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .art-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .image-container {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            background: #111;
+        }
+
+        .art-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps images from stretching */
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+        .art-card:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .info { padding: 25px; text-align: left; }
+
+        .info h3 { margin: 0; font-size: 1.5rem; color: var(--accent); }
+
+        .info p { font-size: 0.9rem; color: #aaa; margin-top: 10px; }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGITAL SHADOWS</h1>
+        <p style="color: #666; font-weight: 300;">The Intersection of Art, Ethics, and Surveillance</p>
+    </header>
+    <a href="index.html" class="back-btn">← Back to Gallery</a><div class="content"><div class="content"></div>
+
+    <section class="gallery">
+<a href="people/snowden.html" style="text-decoration: none; color: inherit;">
+        <div class="art-card">
+            <div class="image-container">
+                <img src="Images/1615568128374.jpg" alt="Edward Snowden">
+            </div>
+            
+            <div class="info">
+                <span class="tag">Privacy</span>
+                <h3>Edward Snowden</h3>
+                <p>A look into the man who redefined the boundaries of state surveillance and individual privacy in the 21st century.</p>
+            </div>
+        </div>
+</a>
+    <a href="people/mitnick.html" style="text-decoration: none; color: inherit;">
+        <div class="art-card">
+            <div class="image-container">
+                <img src="Images/230721114552-kevin-mitnick-file.jpg" alt="Kevin Mitnick">
+            </div>
+            <div class="info">
+                <span class="tag">Social Engineering</span>
+                <h3>Kevin Mitnick</h3>
+                <p>From the FBI's Most Wanted list to a security consultant, Mitnick proved that the human element is the ultimate exploit.</p>
+            </div>
+        </div>
+    </a>
+    <a href="Images/121214045647-gary-mckinnon-hacker.jpg" style="text-decoration: none; color: inherit;">
+        <div class="art-card">
+            <div class="image-container">
+                <img src="Images/121214045647-gary-mckinnon-hacker.jpg" alt="Gary McKinnon">
+            </div>
+            <div class="info">
+                <span class="tag">Extraterrestrial Search</span>
+                <h3>Gary McKinnon</h3>
+                <p>The NASA Infiltrator.</p>
+            </div>
+        </div>
+    </a>
+
+<a href="people/hutchins.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/_97334509_gettyimages-831320200.jpg" alt="Marcus Hutchins">
+        </div>
+        <div class="info">
+            <span class="tag">Malware Defense</span>
+            <h3>Marcus Hutchins</h3>
+            <p>The WannaCry Hero.</p>
+        </div>
+    </div>
+</a>
+
+<a href="people/lamo.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+         <div class="image-container">
+            <img src="Images/5bb35e38210000e700c7c7b2.jpeg" alt="Adrian Lamo">
+        </div>
+        <div class="info">
+            <span class="tag">Whistleblowing</span>
+        <h3>Adrian Lamo</h3>
+        <p>The Homeless Hacker.</p>
+        </div>
+    </div>   
+</a>
+
+<a href="people/gonzalez.html" style="text-decoration: none; color: inherit;">
+    <div class="art-card">
+        <div class="image-container">
+        <img src="Images/albert2_crop_small.jpg" alt="Albert Gonzalez">
+        </div>
+        <div class="info">
+            <span class="tag">Cybercrime</span>
+            <h3>Albert Gonzalez</h3>
+            <p>The Credit Card Kingpin.</p>
+        </div>
+    </div>
+</a>
+    </section>
+</body>
+</html>
